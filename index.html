@@ -5,21 +5,67 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+        <nav>
+  <span class="logo">Damaris Dev</span>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#goals">Goals</a>
+    <a href="#todo">To-Do</a>
+  </div>
+</nav>
+
         <h1>My First Web Page</h1>
         <p>Welcome to my first web page! I built this from scratch.</p>
+        <p id="message">Click the button below to see a greeting!</p>
+        <button onclick="greetMe()">Click Me!</button>
 
-        <h2>About Me</h2>
-        <p>My name is Damaris, and I am learning web development. I enjoy coding and creating new projects.</p>
+       <div class="two-columns">
 
-        <h2>My Hobbies</h2>
-        <p>I have several hobbies, including:</p>
-        <ul>
-            <li>Coding</li>
-            <li>Traveling</li>
-            <li>Cooking</li>
-        </ul>
+  <div>
+    <h2 id="about">About Me</h2>
+    <p>My name is Damaris, and I am learning web development.</p>
+  </div>
+
+  <div>
+    <h2 id="hobbies">My Hobbies</h2>
+    <p>I have several hobbies, including:</p>
+    <ul>
+      <li>Coding</li>
+      <li>Traveling</li>
+      <li>Cooking</li>
+    </ul>
+  </div>
+
+</div>
 
         <h2>Contact Me</h2>
-        <p>You can reach me at <a href="mailto:damaris@example.com">damaris@example.com</a>.</p>
+        <p>You can reach me at <a href="mailto:damaris@gmail.com">damaris@gmail.com</a>.</p>
+
+        <h2 id="goals">My Goals</h2>
+        <p>Here are some of my goals:</p>
+        <ul>
+            <li>Complete a full-stack web development course</li>
+            <li>Build a portfolio of web projects</li>
+            <li>Contribute to open-source projects</li>
+        </ul>
+
+        <h2>My To-DO List</h2>
+        <input type="text" id="taskInput" placeholder="Enter a new task..."><br>
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+        <script src="script.js"></script>   
+        <button onclick="changeColor()">Dark Mode</button>
+            <button onclick="resetColor()">Light Mode</button>
+            <p>You have <span id="counter">0</span> tasks remaining.</p>
+
+            <footer>
+  <p>Made with ❤️ by Damaris | 2026</p>
+  <p>
+    <a href="mailto:damaris@example.com">Contact Me</a>
+  </p>
+</footer>
+
     </body>
 </html>
